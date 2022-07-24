@@ -1,0 +1,430 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); */
+
+:root {
+  --app_theme: #ef4247;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Nav Bar CSS start */
+
+ul,
+li,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+nav {
+  padding-top: 25px;
+  height: 75px;
+  width: auto;
+}
+
+nav .logo {
+  width: 40px;
+  float: left;
+}
+
+nav .logo img {
+  width: 150%;
+  height: 150%;
+  object-fit: contain;
+}
+
+ul.menu {
+  width: auto;
+  float: right;
+  margin-top: 25px;
+}
+
+ul.menu li {
+  float: left;
+}
+
+ul.menu li a {
+  text-decoration: none;
+  /* color: rgba(0, 0, 0, 0.474); */
+  color: #646161;
+  font-size: 12pt;
+  font-weight: bold;
+  padding: 15px;
+}
+
+ul.menu li:last-child a {
+  background-color: var(--app_theme);
+  /* background-color: #ef4247; */
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px, 35px;
+}
+
+ul.menu li:nth-child(6) {
+  margin-left: 100px;
+}
+
+ul.menu li a:hover,
+:active {
+  width: auto;
+  color: var(--app_theme);
+  background-color: #fff;
+  border-bottom: var(--app_theme) solid 4px;
+}
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: var(--app_theme);
+  bottom: 0;
+}
+footer p {
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+footer p.footer-text {
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* Nav Bar CSS end */
+
+/* Image Slider CSS start */
+.container {
+  width: 100%;
+  height: 90vh;
+  /* background-color: #222; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.swiper {
+  width: 90%;
+  height: 80%;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: black;
+}
+
+/* Image Slider CSS end */
+
+/* Hero Section CSS start */
+
+section.hero {
+  width: 100%;
+  height: calc(100vh - 75px);
+}
+section.hero .h2-aboutUs {
+  margin-top: 20px;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 32px;
+  padding: 8px 20px;
+  border-bottom: 5px solid var(--app_theme);
+}
+section.hero .content {
+  width: 45%;
+  margin-right: 5%;
+  float: right;
+  margin-top: 100px;
+}
+section.hero .content span {
+  width: auto;
+  padding: 5px 15px;
+  background-color: #e8e5f6;
+  color: var(--app_theme);
+  text-align: center;
+  border-radius: 25px;
+  font-size: 12pt;
+  font-weight: 700;
+  line-height: 35pt;
+}
+
+section.hero .content h1 {
+  font-size: 30pt;
+  font-weight: 900;
+  line-height: 43pt;
+  margin-bottom: 20px 0px;
+}
+section.hero .content p {
+  font-size: 13pt;
+  line-height: 26pt;
+}
+
+a.btn-primary {
+  background-color: #4a3d99;
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px 40px;
+  display: block;
+  float: left;
+  margin-top: 25px;
+  text-decoration: none;
+  border: transparent 2px solid;
+}
+
+a.button:hover {
+  background-color: #f5f4f9;
+  color: #4a3d99;
+  border: #4a3d99 2px solid;
+}
+
+section.hero .image {
+  width: 50%;
+  height: 60%;
+  /* margin-left: 5%; */
+  float: left;
+  margin-top: 75px;
+}
+section.hero .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+/* Hero Section CSS end */
+
+/* Event CSS start */
+section.event .h2-event {
+  margin-top: 20px;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 32px;
+  padding: 8px 20px;
+  border-bottom: 5px solid var(--app_theme);
+}
+
+section.event .calender {
+  padding: 50px;
+}
+
+/* select.event .view-event {
+  width: calc(20%-30px);
+  height: 100px;
+  background-color: #ef4247;
+  margin: 20px;
+} */
+
+/* Event CSS end */
+
+/* View Request CSS Start */
+section.view_request .h2-request {
+  /* margin-top: 20px; */
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-size: 32px;
+  padding: 8px 15px;
+  border-bottom: 5px solid var(--app_theme);
+}
+
+section.view_request .show_request {
+  background-color: antiquewhite;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+  height: auto;
+  /* padding: 520px; */
+  /* position: relative; */
+}
+
+section.view_request .show_request .user-request {
+  width: calc(20%-30px);
+  height: 100px;
+  background-color: var(--app_theme);
+  margin: 20px;
+  /* display: block; */
+}
+/* View Request CSS End */
+
+/* Make Donation Form CSS Start */
+section.make-donation {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+section.make-donation .h2-make-donation {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-size: 32px;
+  /* padding: 8px 15px; */
+  border-bottom: 5px solid var(--app_theme);
+}
+section.make-donation p {
+  font-size: 18px;
+  line-height: 50px;
+  padding: 20px 0;
+}
+
+section.make-donation .donation-form {
+  width: 100%;
+  margin-top: 40px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+section.make-donation .donation-form input {
+  float: left;
+  font-size: 18px;
+  font-family: "Montserrat";
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border: 2px solid #707070;
+  border-radius: 10px;
+  font-weight: 900;
+  margin: 25px 0;
+  overflow: hidden;
+}
+section.make-donation .donation-form select {
+  border-radius: 10px;
+  margin: 25px 0;
+  width: 100%;
+  font-size: 18px;
+  padding: 15px;
+  font-family: "Montserrat";
+  border: 2px solid #707070;
+}
+
+section.make-donation .donation-form button {
+  /* width: auto; */
+  padding: 20px 25px;
+  border: none;
+  background-color: var(--app_theme);
+  color: #fff;
+  font-size: 13pt;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 25px;
+  letter-spacing: 0.8px;
+}
+
+/* section.make-donation .donation-form input[] */
+/* Make Donation Form CSS End */
+
+/* NewsLetter CSS Start */
+section.newsletter {
+  width: 100%;
+  height: auto;
+  background-color: var(--app_theme);
+  padding: 30px 0;
+}
+
+section.newsletter .message {
+  float: left;
+  width: auto;
+  color: #ffffff;
+}
+section.newsletter .message h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 50px;
+}
+section.newsletter .message span {
+  font-size: 14px;
+}
+
+section.newsletter .newsletter-form {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 12px;
+  float: right;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+}
+
+section.newsletter .newsletter-form input {
+  width: 100%;
+  padding: 18px;
+  outline: none;
+  border: none;
+  /* border: 3px solid #646161;/ */
+  font-size: 18px;
+  font-weight: 700;
+}
+
+section.newsletter .newsletter-form button {
+  margin-right: 2px0;
+  background-color: rgba(0, 0, 0, 0.821);
+  color: #ffffff;
+  padding: 18px;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* NewsLetter CSS End */
+
+/* Brand Title CSS Start */
+section.brandtitle {
+  width: 100%;
+  height: auto;
+  padding: 30px 0;
+}
+
+section.brandtitle img {
+  width: 45px;
+}
+section.brandtitle h4 {
+  font-weight: bold 900;
+  font-size: 26px;
+  line-height: 50px;
+}
+section.brandtitle .arrow-btn {
+  width: 50px;
+  height: 50px;
+  float: right;
+  justify-content: space-between;
+  margin-top: -80px;
+  padding: 15px;
+}
+
+section.brandtitle .arrow-btn .arrow-svg {
+  width: 110%;
+  object-fit: contain;
+  overflow: hidden;
+  /* background-color: #ef4247; */
+  /* padding: 25px; */
+}
+/* Brand Title CSS End */

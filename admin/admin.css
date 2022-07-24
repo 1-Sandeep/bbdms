@@ -1,0 +1,93 @@
+:root {
+  --app_theme: #ef4247;
+  --nav-color: #646161;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: var(--nav-color);
+}
+/* Navigation CSS Start */
+
+ul,
+li,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+nav {
+  padding-top: 25px;
+  height: 75px;
+  width: auto;
+}
+
+nav .logo {
+  width: 40px;
+  float: left;
+}
+
+nav .logo img {
+  width: 150%;
+  height: 150%;
+  object-fit: contain;
+}
+
+ul.menu {
+  width: auto;
+  float: right;
+  margin-top: 25px;
+}
+
+ul.menu li {
+  float: left;
+}
+
+ul.menu li a {
+  text-decoration: none;
+  /* color: rgba(0, 0, 0, 0.474); */
+  color: #646161;
+  font-size: 12pt;
+  font-weight: bold;
+  padding: 15px;
+}
+
+ul.menu li:last-child a {
+  background-color: var(--app_theme);
+  /* background-color: #ef4247; */
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px, 35px;
+}
+
+ul.menu li:nth-child(6) {
+  margin-left: 100px;
+}
+
+ul.menu li a:hover,
+:active {
+  width: auto;
+  color: var(--app_theme);
+  background-color: #fff;
+  border-bottom: var(--app_theme) solid 4px;
+}
+
+/* Navigation CSS End */

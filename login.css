@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+}
+p {
+  width: auto;
+  height: auto;
+  text-align: left;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.register-form .title {
+  width: 85%;
+  height: auto;
+  margin: 0px auto;
+  width: auto;
+  height: auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  /* margin-top: 10px; */
+  border: none;
+  background-color: #ef4247;
+  color: #fff;
+  font-size: 13pt;
+  font-weight: bold;
+  border-radius: 4px;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.register-form {
+  width: 520px;
+  /* height: auto; */
+  min-height: 360px;
+  background-color: #fff;
+  border: 1px solid #d4d4d4;
+  border-radius: 7px;
+  box-shadow: 0px 0px 27px rgb(0 0 0/ 15%);
+  margin: 0px auto;
+  margin-top: 125px;
+  padding: 25px;
+}
+
+.register-form .form {
+  width: 85%;
+  height: auto;
+  margin: 0px auto;
+}
+
+.input-box {
+  width: auto;
+  height: auto;
+  padding: 8px 8px;
+  background-color: #f4f4f4;
+  border: 1px solid #cecece;
+  color: #646161;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.input-box img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  object-fit: contain;
+  opacity: 0.5;
+  padding-top: 9px;
+  float: left;
+}
+.input-box input {
+  width: calc(100% - 55px);
+  padding: 12px;
+  font-size: 14pt;
+  border: none;
+  background-color: #f4f4f4;
+  outline: none;
+  /* float: left; */
+}
+
+.register-account p span {
+  font-size: 13px;
+  color: #ef4247;
+  text-decoration-line: underline;
+}
