@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Admin Dashboard</title>
 
     <!-- Roboto Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,12 +24,44 @@
           <img src="/logo.png" alt="logo" srcset="" />
         </div>
         <ul class="menu">
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Users</a></li>
-          <li><a href="#">Event</a></li>
-          <li><a href="#">Blood Request</a></li>
-          <li><a href="#">Donor Request</a></li>
-          <li><a href="#">Logout</a></li>
+          <li><a href="#" class="active">Dashboard</a></li>
+          <li>
+            <a href="#">Users</a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="#">User</a></li>
+                <li><a href="#">Manage User</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">Event</a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="#">View Event</a></li>
+                <li><a href="#">Organise Event</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">Blood Request</a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="#">View Request</a></li>
+                <li><a href="#">Manage Request</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">Donor Request</a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="#">View Request</a></li>
+                <li><a href="#">Manage Request</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#" class="logout">Logout</a></li>
         </ul>
       </div>
     </nav>
@@ -82,9 +114,34 @@
     <section class="record">
       <div class="wrapper">
         <div class="record-table">
-          <div class="record-donor"></div>
-          <div class="record-receiver"></div>
-          <div class="record-new-request"></div>
+          <div>
+            <div class="record-donor">
+              <h3>
+                Total Number of Donor
+                <span class="qty"> : 50</span>
+              </h3>
+            </div>
+            <div class="record-receiver">
+              <h3>
+                Number of Donor
+                <span class="qty"> : 50</span>
+              </h3>
+            </div>
+          </div>
+          <div>
+            <div class="record-active-donor">
+              <h3>
+                Number of Active Donor
+                <span class="qty"> : 50</span>
+              </h3>
+            </div>
+            <div class="record-new-request">
+              <h3>
+                New Blood Request
+                <span class="qty"> : 50</span>
+              </h3>
+            </div>
+          </div>
         </div>
       </div>
     </section>
