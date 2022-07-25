@@ -82,8 +82,7 @@ ul.menu li:nth-child(6) {
   margin-left: 100px;
 }
 
-ul.menu li a:hover,
-:active {
+ul.menu li a:hover {
   width: auto;
   color: var(--app_theme);
   background-color: #fff;
